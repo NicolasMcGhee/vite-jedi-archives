@@ -1,0 +1,26 @@
+.Navbar-Container {
+    background-color: slategray;
+    border-bottom: white 1px solid;   
+}
+
+.Navbar-Flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Navbar-Lists ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.Navbar-Lists ul li {
+    font-variant: small-caps;
+    padding: 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.Navbar-Lists ul li:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+    transition: all .5s;
+}

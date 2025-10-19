@@ -1,0 +1,22 @@
+.Banner_Container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(75, 106, 119, 0.297);
+}
+
+.Banner_ImageContainer {
+    display: flex;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.Banner_ImagesConponent {
+    aspect-ratio: 4/3;
+    width: 100vw;
+    flex-shrink: 0;
+    border: 1rem;
+    background-color: rgba(75, 106, 119, 0.497);
+    object-fit: contain;
+    background-size: ;
+}

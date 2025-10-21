@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Banner.css";
 import { motion } from "motion/react";
 
-const imgs = [{ title: "Vader", pic: "/Vader-Profile.jpg" }, {title: "Tarkin", pic: "/Tarkin.jpg"}];
+const imgs = [{ title: "Darth Vader", pic: "/Vader-Profile.jpg" }, {title: "Tarkin", pic: "/Tarkin.jpg"}];
 
 export default function Banner() {
     const [imgIndex, setImgIndex] = useState(0)
 
   return (
-    <div className="Banner_Container">
-      <motion.div 
+    <section className="Banner_Container">
+      <motion.section 
       animate={{
-        translateX: `-${imgIndex * 100}%`
+        translateX: `-${imgIndex}%`,
       }}
       className="Banner_ImageContainer">
         <Images />
-      </motion.div>
-    </div>
+      </motion.section>
+      {/* <button onClick={() => setImgIndex(imgIndex - 100)}>Press</button>
+      <button onClick={() => setImgIndex(imgIndex + 100)}>Press</button> */}
+    </section>
   );
 }
 

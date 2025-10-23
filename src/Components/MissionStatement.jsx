@@ -18,9 +18,9 @@ export default function MissionStatement() {
         </p>
       </div>
       <div className="MS_Bottom_Section">
-        <p>The future</p>
+        {/* <p>The future</p>
         <p>of metal</p>
-        <p>recycling</p>
+        <p>recycling</p> */}
         <div className="MS_Bottom_List">
           <img src={Tarkin} alt="" width={500}/>
           <ul>

@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     color: white;
+    margin-top: 3rem;
 }
 
 .featured_LeftSide {
@@ -12,6 +13,12 @@
     justify-content: space-between;
     width: 2000px;
     
+}
+
+.featured_Desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .featured_LeftSide_Text {

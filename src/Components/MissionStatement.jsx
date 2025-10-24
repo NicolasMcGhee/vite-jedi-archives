@@ -1,7 +1,6 @@
 import React from "react";
 import "./MissionStatement.css";
-import Tarkin from '/Tarkin.jpg'
-
+import Jocastu from "/Jedi/JocastaNu-Db.webp";
 
 export default function MissionStatement() {
   return (
@@ -18,17 +17,18 @@ export default function MissionStatement() {
         </p>
       </div>
       <div className="MS_Bottom_Section">
-        {/* <p>The future</p>
-        <p>of metal</p>
-        <p>recycling</p> */}
-        <div className="MS_Bottom_List">
-          <img src={Tarkin} alt="" width={500}/>
-          <ul>
-            <li>Endless Searching</li>
-            <li>Centuries of Knowledge</li>
-            <li>Open to everyone</li>
-          </ul>
+        <div className="MS_Bottom_Title">
+          <div>
+            <h2>Jocasta Nu</h2>
+            <h4>Chief Librarian</h4>
+          </div>
+          <img src={Jocastu} alt="" width={500} />
         </div>
+        <ul>
+          <li>Endless Mysteries</li>
+          <li>Centuries of Knowledge</li>
+          <li>Truth Uncovered</li>
+        </ul>
       </div>
     </section>
   );

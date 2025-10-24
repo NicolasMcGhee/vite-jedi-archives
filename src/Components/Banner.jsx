@@ -16,8 +16,6 @@ export default function Banner() {
       className="Banner_ImageContainer">
         <Images />
       </motion.section>
-      {/* <button onClick={() => setImgIndex(imgIndex - 100)}>Press</button>
-      <button onClick={() => setImgIndex(imgIndex + 100)}>Press</button> */}
     </section>
   );
 }

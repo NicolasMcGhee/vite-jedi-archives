@@ -5,12 +5,16 @@ export default function Featured(props) {
   return (
     <section className='featured_Container'>
         <div className='featured_LeftSide'>
+          <div className='featured_Desc'>
             <h1>The Jedi</h1>
+            <p>{props.active.desc}</p>
+          </div>
+            
             <div className='featured_LeftSide_Text'>
-                <p className={`${props.active.id === 1 ? "active" : "" }`} onClick={() => props.setActive({pic: "/Jedi/Yoda.png", id: 1})}>Yoda</p>
-                <p className={`${props.active.id === 2 ? "active" : "" }`} onClick={() => props.setActive({pic: "/Jedi/Mace_Windu.png", id: 2})}>Mace Windu</p>
-                <p className={`${props.active.id === 3 ? "active" : "" }`} onClick={() => props.setActive({pic: "/Jedi/Obi-Wan-Kenobi.png", id: 3})}>Obi-Wan Kenobi</p>
-                <p className={`${props.active.id === 4 ? "active" : "" }`} onClick={() => props.setActive({pic: "/Jedi/Anakin_Skywalker.png", id: 4})}>Anakin Skywalker</p>
+                <p className={`${props.active.id === 1 ? "active" : "" }`} onClick={() => props.setActive(props.Jedi.Yoda)}>Yoda</p>
+                <p className={`${props.active.id === 2 ? "active" : "" }`} onClick={() => props.setActive(props.Jedi.MaceWindu)}>Mace Windu</p>
+                <p className={`${props.active.id === 3 ? "active" : "" }`} onClick={() => props.setActive(props.Jedi.ObiWanKenobi)}>Obi-Wan Kenobi</p>
+                <p className={`${props.active.id === 4 ? "active" : "" }`} onClick={() => props.setActive(props.Jedi.AnakinSkywalker)}>Anakin Skywalker</p>
             </div>
         </div>
         <div>

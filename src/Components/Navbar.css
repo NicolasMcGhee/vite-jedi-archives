@@ -1,11 +1,9 @@
 .Navbar-Container {
+    padding-left: 2rem;
     background-color: rgba(55, 143, 230, 0.5);
     border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
-    color: snow;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(5px);
+    /* z-index: 1000; */
+    /* backdrop-filter: blur(5px); */
 }
 
 .Navbar-Flex {
@@ -13,9 +11,20 @@
     justify-content: space-between;
 }
 
+.Navbar-Lists {
+    display: flex;
+    gap: 2rem;
+}
+
 .Navbar-Lists ul {
     display: flex;
     list-style-type: none;
+}
+
+.Navbar-Lists input {
+    /* height: 500px; */
+    /* font-size: 2rem; */
+    padding: 1rem;
 }
 
 .Navbar-Lists ul li {

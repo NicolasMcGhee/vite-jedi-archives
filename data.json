@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1",
+    "name": "Anakin Skywalker",
+    "status": "Jedi",
+    "rank": "Jedi Knight",
+    "lightsaberColor": "Blue",
+    "lightsaberForm": "Form 5: Djem So",
+    "homeWorld": "Tattooine",
+    "picture": {
+      "profile": "/Jedi/Anakin_Skywalker.png"
+    },
+    "borderColor": "royalblue"
+  },
+  {
+    "id": "2",
+    "name": "Obi-wan Kenobi",
+    "status": "Jedi",
+    "rank": "Jedi Master",
+    "lightsaberColor": "Blue",
+    "lightsaberForm": "Form 3: Soresu",
+    "homeWorld": "Stewjon",
+    "picture": {
+      "profile": "/Jedi/Obi-Wan-Kenobi.png"
+    },
+    "borderColor": "royalblue"
+
+  },
+  {
+    "id": "3",
+    "name": "Yoda",
+    "status": "Jedi",
+    "rank": "Jedi Grandmaster",
+    "lightsaberColor": "Green",
+    "lightsaberForm": "Form 4: Ataru",
+    "homeWorld": "Unknown",
+    "picture": {
+      "profile": "/Jedi/Yoda.png"
+    },
+    "borderColor": "green"
+  },
+  {
+    "id": "4",
+    "name": "Mace Windu",
+    "status": "Jedi",
+    "rank": "Jedi Master",
+    "lightsaberColor": "Purple",
+    "lightsaberForm": "Form 7: Vaapad",
+    "homeWorld": "Haruun Kal",
+    "picture": {
+      "profile": "/Jedi/Mace_Windu.png"
+    },
+    "borderColor": "rebeccapurple"
+  },
+  {
+    "id": "5",
+    "name": "Darth Sidious",
+    "status": "Sith",
+    "rank": "Sith Master",
+    "lightsaberColor": "Red",
+    "lightsaberForm": "All",
+    "homeWorld": "Naboo",
+    "picture": {
+      "profile": "/Sith/Emperor_Sidious.png"
+    },
+    "borderColor": "red"
+  },
+  {
+    "id": "6",
+    "name": "Darth Maul",
+    "status": "Sith",
+    "rank": "Sith Apprentice",
+    "lightsaberColor": "Red",
+    "lightsaberForm": "Form 6: Niman",
+    "homeWorld": "Dathomir",
+    "picture": {
+      "profile": "/Sith/Darth_Maul.png"
+    },
+    "borderColor": "red"
+  },
+  {
+    "id": "7",
+    "name": "Count Dooku",
+    "status": "Sith",
+    "rank": "Sith Apprentice",
+    "lightsaberColor": "Red",
+    "lightsaberForm": "Form 2: Makashi",
+    "homeWorld": "Serenno",
+    "picture": {
+      "profile": "/Sith/Count Dooku.png"
+    },
+    "borderColor": "red"
+  },
+  {
+    "id": "8",
+    "name": "Darth Vader",
+    "status": "Sith",
+    "rank": "Sith Apprentice",
+    "lightsaberColor": "Red",
+    "lightsaberForm": "Form 5: Djem So",
+    "homeWorld": "Mustafar",
+    "picture": {
+      "profile": "/Sith/Darth Vader.jpg"
+    },
+    "borderColor": "crimson"
+  }
+]

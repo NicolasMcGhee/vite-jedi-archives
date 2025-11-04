@@ -7,7 +7,8 @@ import Featured from "./Components/Featured";
 import { useState } from "react";
 import Card from "./Components/Card";
 import CardWrapper from "./Components/CardWrapper";
-import data from '../data.json'
+import data from "../data.json";
+import { Route, Routes } from "react-router";
 
 function App() {
   const Jedi = {
@@ -40,13 +41,23 @@ function App() {
   return (
     <>
       <Navbar searchValue={searchValue} setSearchValue={setSearchValue} />
-      <CardWrapper>
-        {data.map((item) => (
-          <Card profilePic={item.picture.profile} Name={item.name} Status={item.status}/>
-        )
-
-        )}
-      </CardWrapper>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <CardWrapper>
+              {data.map((item) => (
+                <Card
+                  profilePic={item.picture.profile}
+                  Name={item.name}
+                  Status={item.status}
+                />
+              ))}
+            </CardWrapper>
+          }
+        />
+        <Route path="/test" element={<Banner/>}/>
+      </Routes>
       {/* <Banner /> */}
       {/* <MissionStatement /> */}
       {/* <Featured active={active} setActive={setActive} test={test} setTest={setTest}/> */}

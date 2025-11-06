@@ -31,6 +31,10 @@
     transition: all 1s;
 }
 
+.Card_Top a {
+    text-decoration: none;
+    color: snow;
+}
 .Card_Top img {
     width: 300px;
     aspect-ratio: 4/5;
@@ -40,3 +44,4 @@
     text-align: justify;
     line-height: 1.6;
 }
+

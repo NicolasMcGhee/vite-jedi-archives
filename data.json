@@ -10,7 +10,8 @@
     "picture": {
       "profile": "/Jedi/Anakin_Skywalker.png"
     },
-    "borderColor": "royalblue"
+    "borderColor": "royalblue",
+    "link": "anakin-skywalker"
   },
   {
     "id": "2",
@@ -23,7 +24,8 @@
     "picture": {
       "profile": "/Jedi/Obi-Wan-Kenobi.png"
     },
-    "borderColor": "royalblue"
+    "borderColor": "royalblue",
+    "link": "obiwan-kenobi"
 
   },
   {
@@ -37,7 +39,8 @@
     "picture": {
       "profile": "/Jedi/Yoda.png"
     },
-    "borderColor": "green"
+    "borderColor": "green",
+    "link": "yoda"
   },
   {
     "id": "4",
@@ -50,7 +53,8 @@
     "picture": {
       "profile": "/Jedi/Mace_Windu.png"
     },
-    "borderColor": "rebeccapurple"
+    "borderColor": "rebeccapurple",
+    "link": "mace-windu"
   },
   {
     "id": "5",
@@ -63,7 +67,8 @@
     "picture": {
       "profile": "/Sith/Emperor_Sidious.png"
     },
-    "borderColor": "red"
+    "borderColor": "red",
+    "link": "palpatine"
   },
   {
     "id": "6",
@@ -76,7 +81,8 @@
     "picture": {
       "profile": "/Sith/Darth_Maul.png"
     },
-    "borderColor": "red"
+    "borderColor": "red",
+    "link": "darth-maul"
   },
   {
     "id": "7",
@@ -89,7 +95,8 @@
     "picture": {
       "profile": "/Sith/Count Dooku.png"
     },
-    "borderColor": "red"
+    "borderColor": "red",
+    "link": "count-dooku"
   },
   {
     "id": "8",
@@ -102,6 +109,7 @@
     "picture": {
       "profile": "/Sith/Darth Vader.jpg"
     },
-    "borderColor": "crimson"
+    "borderColor": "crimson",
+    "link": "darth-vader"
   }
 ]

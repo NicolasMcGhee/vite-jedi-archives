@@ -9,6 +9,7 @@ import Card from "./Components/Card";
 import CardWrapper from "./Components/CardWrapper";
 import data from "../data.json";
 import { Route, Routes } from "react-router";
+import InfoPage from "./Components/InfoPage";
 
 function App() {
   const Jedi = {
@@ -51,12 +52,13 @@ function App() {
                   profilePic={item.picture.profile}
                   Name={item.name}
                   Status={item.status}
+                  Link={item.id}
                 />
               ))}
             </CardWrapper>
           }
         />
-        <Route path="/test" element={<Banner/>}/>
+        <Route path="/:postId" element={<InfoPage />}/>
       </Routes>
       {/* <Banner /> */}
       {/* <MissionStatement /> */}

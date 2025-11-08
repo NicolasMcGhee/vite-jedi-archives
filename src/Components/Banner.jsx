@@ -1,45 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Banner.css";
 import { motion } from "motion/react";
-
-const imgs = [{ title: "Darth Vader", pic: "/Vader-Profile.jpg" }, {title: "Tarkin", pic: "/Tarkin.jpg"}];
+import data from "../../data.json";
 
 export default function Banner() {
-    const [imgIndex, setImgIndex] = useState(0)
+  const [selectedImage, setSelectedImage] = useState(data[0]);
 
+  
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+  useEffect(() => {
+    setSelectedImage(data[getRandomInt(8)])
+  }, [])
+
+  console.log(selectedImage);
   return (
     <section className="Banner_Container">
-      <motion.section 
-      animate={{
-        translateX: `-${imgIndex}%`,
-      }}
-      className="Banner_ImageContainer">
-        <Images />
+      <motion.section
+        // animate={{
+        //   translateX: `-${imgIndex}%`,
+        // }}
+        // className="Banner_ImageContainer"
+      >
+        <div
+              style={{
+                backgroundImage: `url(${selectedImage.picture.profile})`,
+                // backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              className="Banner_ImagesConponent"
+            >
+              {" "}
+              <h1 style={{ color: "white" }}>{selectedImage.title}</h1>
+            </div>
       </motion.section>
     </section>
   );
 }
 
-const Images = () => {
-  return (
-    <>
-      {imgs.map((imgSrc, idx) => {
-        return (
-          <div
-            key={idx}
-            style={{
-              backgroundImage: `url(${imgSrc.pic})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="Banner_ImagesConponent"
-          >
-            {" "}
-            <h1 style={{ color: "white" }}>{imgSrc.title}</h1>
-          </div>
-        );
-      })}
-    </>
-  );
-};

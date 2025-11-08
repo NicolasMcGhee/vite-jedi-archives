@@ -8,7 +8,7 @@ export default function InfoPage() {
   const [info, setInfo] = useState(data);
 
   async function filterInfo() {
-    const info = data.filter((item) => item.id.includes(postId));
+    const info = data.filter((item) => item.link.includes(postId));
     setInfo(info);
   }
 

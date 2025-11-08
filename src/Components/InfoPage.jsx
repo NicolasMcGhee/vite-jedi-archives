@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import data from "../../data.json";
-import './infoPage.css'
+import './InfoPage.css'
 
 export default function InfoPage() {
   const { postId } = useParams();

@@ -14,7 +14,7 @@ export default function InfoPage() {
 
   useEffect(() => {
     filterInfo(postId);
-  }, []);
+  });
 
   return (
     <div className="Infopage_Container">

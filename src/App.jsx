@@ -29,7 +29,7 @@ function App() {
                     profilePic={item.picture.profile}
                     Name={item.name}
                     Status={item.status}
-                    Link={item.id}
+                    Link={item.link}
                   />
                 ))}
               </CardWrapper>

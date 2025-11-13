@@ -8,7 +8,8 @@
     "lightsaberForm": "Form 5: Djem So",
     "homeWorld": "Tattooine",
     "picture": {
-      "profile": "/Jedi/Anakin_Skywalker.png"
+      "profile": "/Jedi/Anakin/Anakin_Skywalker_Profile.png",
+      "featured": "/Jedi/Anakin/Anakin_Skywalker_Featured.jpg"
     },
     "borderColor": "royalblue",
     "link": "anakin-skywalker"
@@ -22,11 +23,11 @@
     "lightsaberForm": "Form 3: Soresu",
     "homeWorld": "Stewjon",
     "picture": {
-      "profile": "/Jedi/Obi-Wan-Kenobi.png"
+      "profile": "/Jedi/Obi-wan/Obi-Wan_Profile.png",
+      "featured": "/Jedi/Obi-wan/Obi-Wan_Featured.jpg"
     },
     "borderColor": "royalblue",
     "link": "obiwan-kenobi"
-
   },
   {
     "id": "3",
@@ -37,7 +38,8 @@
     "lightsaberForm": "Form 4: Ataru",
     "homeWorld": "Unknown",
     "picture": {
-      "profile": "/Jedi/Yoda.png"
+      "profile": "/Jedi/Yoda/Yoda_Profile.png",
+      "featured": "/Jedi/Yoda/Yoda_Featured.jpeg"
     },
     "borderColor": "green",
     "link": "yoda"
@@ -51,7 +53,8 @@
     "lightsaberForm": "Form 7: Vaapad",
     "homeWorld": "Haruun Kal",
     "picture": {
-      "profile": "/Jedi/Mace_Windu.png"
+      "profile": "/Jedi/MaceWindu/Mace_Windu_Profile.png",
+      "featured": "/Jedi/MaceWindu/Mace_Windu_Featured.jpg"
     },
     "borderColor": "rebeccapurple",
     "link": "mace-windu"
@@ -65,7 +68,8 @@
     "lightsaberForm": "All",
     "homeWorld": "Naboo",
     "picture": {
-      "profile": "/Sith/Emperor_Sidious.png"
+      "profile": "/Sith/Palpatine/Emperor_Sidious_Profile.png",
+      "featured": "/Sith/Palpatine/Palpatine_Featured.jpg"
     },
     "borderColor": "red",
     "link": "palpatine"
@@ -79,7 +83,8 @@
     "lightsaberForm": "Form 6: Niman",
     "homeWorld": "Dathomir",
     "picture": {
-      "profile": "/Sith/Darth_Maul.png"
+      "profile": "/Sith/Maul/Maul_Profile.png",
+      "featured": "/Sith/Maul/Maul_Featured.jpg"
     },
     "borderColor": "red",
     "link": "darth-maul"
@@ -93,7 +98,8 @@
     "lightsaberForm": "Form 2: Makashi",
     "homeWorld": "Serenno",
     "picture": {
-      "profile": "/Sith/Count Dooku.png"
+      "profile": "/Sith/Dooku/Dooku_Profile.png",
+      "featured": "/Sith/Dooku/Dooku_Featured.png"
     },
     "borderColor": "red",
     "link": "count-dooku"
@@ -107,7 +113,8 @@
     "lightsaberForm": "Form 5: Djem So",
     "homeWorld": "Mustafar",
     "picture": {
-      "profile": "/Sith/Darth Vader.jpg"
+      "profile": "/Sith/Vader/Vader_Profile.jpg",
+      "featured": "/Sith/Vader/Vader_Featured.jpg"
     },
     "borderColor": "crimson",
     "link": "darth-vader"

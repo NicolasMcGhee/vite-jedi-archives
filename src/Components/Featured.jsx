@@ -21,17 +21,22 @@ export default function Featured() {
           : selectedImage.status === "Sith"
           ? "Red"
           : "Grey"
-      }`}
+      } Banner_ImagesConponent` }
+      style={{backgroundImage:`url(${selectedImage.picture.featured})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat:"no-repeat"
+    }}
     >
       {/* Flex: 2 Sections */}
       <div className="featured_Flex">
         {/* Section 1 */}
         <div className="featured_Info">
           <div className="featured_Desc">
-            <h4>Featured</h4>
-            <div>
+            {/* <h4>Featured</h4> */}
+            <div className="featured_Title">
               <h1>{selectedImage.name}</h1>
-              <h3>{selectedImage.rank}</h3>
+              <h5>{selectedImage.rank}</h5>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,11 +54,6 @@ export default function Featured() {
         </div>
         {/* Section 2 */}
         <div className="Featured_RightSide">
-          <img
-            className="featured_Image"
-            src={selectedImage.picture.profile}
-            alt={`Picture of ${selectedImage.name}`}
-          />
         </div>
       </div>
     </section>

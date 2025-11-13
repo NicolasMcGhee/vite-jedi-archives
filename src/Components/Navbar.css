@@ -1,40 +1,69 @@
 .Navbar-Container {
-    padding-left: 2rem;
-    background-color: rgba(55, 143, 230, 0.5);
-    border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
-    /* z-index: 1000; */
-    /* backdrop-filter: blur(5px); */
+  padding-top: .5rem;
+  /* position: sticky;
+  top: 0; */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border-bottom: 1px solid snow; */
 }
 
 .Navbar-Flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar-Left {
+  display: flex;
+  gap: 1rem;
+  width: 40%;
+  color: snow;
+  align-items: center;
+  gap: 10rem;
+  padding-left: 2rem;
 }
 
-.Navbar-Lists {
-    display: flex;
-    gap: 2rem;
+.Navbar-Left p {
+  opacity: .3;
 }
 
-.Navbar-Lists ul {
-    display: flex;
-    list-style-type: none;
+.Navbar-Right {
+  display: flex;
+  gap: .5rem;
+  justify-content: end;
+}
+.Navbar-Right div {
+  padding: 1rem 4rem;
+  display: flex;
+  cursor: pointer;
 }
 
-.Navbar-Lists input {
-    /* height: 500px; */
-    /* font-size: 2rem; */
-    padding: 1rem;
+.hover-underline {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  display: inline-block;
+  
 }
 
-.Navbar-Lists ul li {
-    font-variant: small-caps;
-    padding: 1rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff0000, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
 }
 
-.Navbar-Lists ul li:hover {
-    cursor: pointer;
-    background-color: gainsboro;
-    transition: all .5s;
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
 }

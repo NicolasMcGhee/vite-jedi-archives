@@ -1,8 +1,6 @@
 // import { useState } from 'react'
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Banner from "./Components/Banner";
-import MissionStatement from "./Components/MissionStatement";
 import Featured from "./Components/Featured";
 import { useState } from "react";
 import Card from "./Components/Card";
@@ -21,7 +19,6 @@ function App() {
           path="/"
           element={
             <>
-              {/* <Banner /> */}
               <Featured />
               <CardWrapper>
                 {data.map((item) => (

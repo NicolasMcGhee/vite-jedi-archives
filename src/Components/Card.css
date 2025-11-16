@@ -1,47 +1,67 @@
 .Card_Container {
-    border: 2px solid snow;
-    padding: 1rem;
-    border-radius: .5rem;
-    color: snow;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    gap: 2rem;
+  border: 1px solid snow;
+  padding: 1rem;
+  color: snow;
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
 }
 
 .Card_Top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-}
-
-.Card_Top h1:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: .4rem;
-    color: red;
-    transition: all 1s;
-}
-
-.Card_Top h1:focus {
-    cursor: pointer;
-    text-decoration: underline;
-    color: red;
-    transition: all 1s;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  object-fit: fill;
 }
 
 .Card_Top a {
-    text-decoration: none;
-    color: snow;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  padding: 1rem;
 }
-.Card_Top img {
-    width: 300px;
-    aspect-ratio: 4/5;
+
+.Card_Top:hover a {
+  opacity: 1;
+}
+
+.Card_Top h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  color: red;
+  transition: all 1s;
+}
+
+.Card_Top h1:focus {
+  cursor: pointer;
+  text-decoration: underline;
+  color: red;
+  transition: all 1s;
+}
+
+.Card_Top a {
+  text-decoration: none;
+  color: snow;
 }
 
 .Card_Bottom {
-    text-align: justify;
-    line-height: 1.6;
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+  flex-direction: column;
 }
 
+.Card_Info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 0.5;
+}

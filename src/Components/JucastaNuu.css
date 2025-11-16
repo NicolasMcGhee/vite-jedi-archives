@@ -1,0 +1,21 @@
+.JocastaNuu_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.JocastaNuu_Title {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.JocastaNuu_Text {
+    font-size: 2rem;
+    width: 40%;
+    
+}

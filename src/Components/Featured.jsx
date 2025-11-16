@@ -1,8 +1,9 @@
 import React, { Suspense, useEffect, useState } from "react";
 import "./Featured.css";
 import data from "../../data.json";
-import { Link } from "react-router";
+import { Link, UNSAFE_decodeViaTurboStream } from "react-router";
 import Banner from "./Banner";
+import Loading from "./Loading";
 
 export default function Featured() {
   const [selectedImage, setSelectedImage] = useState(data[0]);
@@ -15,7 +16,8 @@ export default function Featured() {
   }, []);
 
   return (
-    <Suspense fallback={<Banner />}>
+    <Suspense fallback={<Loading />}>
+      <div className="Featured_Border">
       <section
         className={`featured_Container ${
           selectedImage.status === "Jedi"
@@ -59,6 +61,15 @@ export default function Featured() {
           <div className="Featured_RightSide"></div>
         </div>
       </section>
+
+      {/* Summary */}
+      <section className="Summary_Container">
+        <div className="Summary_Text">
+          <p>The <span className="Summary_Focus">Jedi Archives</span> is the single greatest source of all known knowledge in the galaxy summarized simply as: <span className="Featured_Quote">"If it exists, it's in the archives"</span> </p>
+        </div>
+        
+      </section>
+      </div>
     </Suspense>
   );
 }

@@ -4,10 +4,11 @@ import JucastaNuu from "../JucastaNuu";
 import CardWrapper from "../CardWrapper";
 import Card from "../Card";
 import MissionStatement from "../MissionStatement";
+import './HomePage.css'
 
 export default function HomePage({data}) {
   return (
-    <div>
+    <div className="Home_Container">
       <Featured />
       <JucastaNuu />
       {/* <CardWrapper>

@@ -1,0 +1,7 @@
+
+
+@media (width < 1200px) {
+    .Home_Container {
+        padding: 0 1rem;
+    }
+}

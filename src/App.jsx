@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<HomePage data={data} />} />
         <Route path="/:postId" element={<InfoPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

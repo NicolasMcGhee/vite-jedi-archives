@@ -3,6 +3,7 @@ import Featured from "../Featured";
 import JucastaNuu from "../JucastaNuu";
 import CardWrapper from "../CardWrapper";
 import Card from "../Card";
+import MissionStatement from "../MissionStatement";
 
 export default function HomePage({data}) {
   return (
@@ -89,6 +90,7 @@ export default function HomePage({data}) {
           HomeWorld={data[7].homeWorld}
         />
       </CardWrapper>
+      <MissionStatement />
     </div>
   );
 }

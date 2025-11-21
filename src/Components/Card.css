@@ -4,7 +4,7 @@
   color: snow;
   display: flex;
   flex-direction: column;
-
+  background-color: rgb(21, 20, 20);
   gap: 2rem;
 }
 
@@ -23,7 +23,7 @@
   bottom: 0;
   right: 0;
   opacity: 0;
-  width: 50%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
   padding: 1rem;
@@ -31,6 +31,7 @@
 
 .Card_Top:hover a {
   opacity: 1;
+  transition: .5s all;
 }
 
 .Card_Top h1:hover {
